@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CommunityFixIt</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="issues">
+        <item>Damaged Sidewalk</item>
+        <item>Damaged Curb/Gutter</item>
+        <item>Dead Animal</item>
+        <item>Litter</item>
+        <item>Graffiti</item>
+        <item>Weeds/High Grass</item>
+        <item>Illegal/Damaged Sign</item>
+        <item>Broken Traffic Light</item>
+        <item>Pothole</item>
+    </string-array>
+</resources>

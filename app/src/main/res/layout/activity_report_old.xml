@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.anish.googlemapsapi.ReportActivity"
+    android:weightSum="1">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+            <TextView
+            android:id="@+id/viewissue_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="200dp"
+            android:textSize="18dp"
+            android:layout_gravity="left"
+            android:textAlignment="center"
+            android:hint="Select a category"/>
+
+
+
+            <Button
+            android:id="@+id/issuetitle_id"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="#41ba7a"
+            android:textAlignment="center"
+            android:text="Select a category"
+            android:onClick="onClickIssueTitleButton"/>
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="#fff"
+                android:background="#fff"/>
+
+            <Button
+                android:id="@+id/submit_id"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="#41ba7a"
+                android:onClick="emailReport"
+                android:paddingTop="5dp"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    <EditText
+        android:id="@+id/description_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="100dp"
+        android:focusedByDefault="false"
+        android:hint="Type A Description Here"/>
+
+
+    <Button
+        android:id="@+id/photo_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchCamera"
+        android:text="Photo" />
+
+    <ImageView
+        android:id="@+id/imageview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+
+
+</LinearLayout>
+</ScrollView>

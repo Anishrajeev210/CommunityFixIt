@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apps.anish.googlemapsapi.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/community"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/CommunityFixIT_id"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:fontFamily="casual"
+        android:paddingLeft="160dp"
+        android:paddingTop="20dp"
+        android:text="Community FixIt"
+        android:textColor="#ff81ac7f"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/report_id"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_menu_edit"
+            android:onClick="onClickReportButton"
+            android:paddingTop="20dp"
+            android:text="Report"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/issues_id"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_menu_info_details"
+            android:onClick="onClickIssuesButton"
+            android:paddingTop="20dp"
+            android:text="All Issues"
+            android:textColor="#fff" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginTop="130dp">
+        <Button
+            android:id="@+id/callcity_id"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_menu_call"
+            android:onClick="onClickPhoneButton"
+            android:paddingTop="20dp"
+            android:text="Call City"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/citywebsite_id"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/circle"
+            android:drawableTop="@android:drawable/ic_menu_myplaces"
+            android:onClick="onClickCityWebsiteButton"
+            android:paddingTop="20dp"
+            android:text="City Website"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</LinearLayout>
